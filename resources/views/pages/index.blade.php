@@ -21,15 +21,15 @@
     </table>
     <div class="pag-links">
         @if ($currentPage > 1)
-            <a href="{{ url()->current() }}?page={{ $currentPage - 1 }}" class="prev">Previous</a>
+            <a href="/?page={{ $currentPage - 1 }}">&#171;</a>
         @endif
 
         @for ($page = 1; $page <= $totalPages; $page++)
-            <a href="{{ url()->current() }}?page={{ $page }}" class="{{ $page == $currentPage ? 'active' : '' }}">{{ $page }}</a>
+            <a href="/?page={{ $page }}">{{ $page }}</a>
         @endfor
 
         @if ($currentPage < $totalPages)
-            <a href="{{ url()->current() }}?page={{ $currentPage + 1 }}" class="next">Next</a>
+            <a href="/?page={{ $currentPage + 1 }}">&#187;</a>
         @endif
     </div>
 @endsection

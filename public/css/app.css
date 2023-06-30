@@ -44,24 +44,39 @@ body {
 }
 
 .table-users {
-    padding: 0.5rem;
+    padding: 1rem;
     max-width: 100%;
     margin: 2rem auto;
+    margin-bottom: 0.75rem;
     border: 1px solid var(--color--primary);
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.table-users th {
+    border-bottom: 1px solid var(--color--text-1);
 }
 
 .table-users td,
 .table-users th {
-    padding: 0.25rem;
-    font-size: 1rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.85rem;
 }
+
+.table-users tr:nth-child(even) {
+    background-color: #e1dada;
+  }
 
 .pag-links {
     margin: 0 auto;
     width: 300px;
     text-align: center;
 }
+
+.pag-links > a:hover {
+    transform: scale(1.2);
+}
+
 
 .pag-links > a,
 .pag-links > span {
