@@ -1,5 +1,5 @@
-<?php
+@extends('layouts.app')
 
-echo 'INDEX'
-
-?>
+@section('content')
+    <h1>Table Page</h1>
+@endsection
