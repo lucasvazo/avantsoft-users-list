@@ -32,7 +32,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header-main-logo {
@@ -44,10 +44,11 @@ body {
 }
 
 .table-users {
+    padding: 0.5rem;
     max-width: 100%;
     margin: 2rem auto;
     border: 1px solid var(--color--primary);
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .table-users td,
@@ -56,8 +57,17 @@ body {
     font-size: 1rem;
 }
 
-button {
-    cursor: pointer;
+.pag-links {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.pag-links > a,
+.pag-links > span {
+    text-decoration: none;
+    color: var(--color--text-1);
+    font-weight: 600;
 }
 
 img {
