@@ -1,6 +1,6 @@
 :root {
     --color--bg-white: #ffffffe6;
-    --color--bg-gray: #f1efef;
+    --color--bg-gray: #faf7f7;
     --color--primary: #bbb4b4bb;
     --color--text-1: #171717;
 }
@@ -29,10 +29,10 @@ html {
 .header-main {
     height: 60px;
     background-color: var(--color--bg-white);
-    border-bottom: 1px solid var(--color--primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
 }
 
 .header-main-logo {
@@ -41,6 +41,19 @@ html {
 
 body {
     background-color: var(--color--bg-gray);
+}
+
+.table-users {
+    max-width: 100%;
+    margin: 2rem auto;
+    border: 1px solid var(--color--primary);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+}
+
+.table-users td,
+.table-users th {
+    padding: 0.25rem;
+    font-size: 1rem;
 }
 
 button {
