@@ -1,0 +1,94 @@
+:root {
+    --color--bg-white: #ffffffe6;
+    --color--bg-gray: #faf7f7;
+    --color--primary: #bbb4b4bb;
+    --color--text-1: #171717;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+body,
+html {
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: var(--color--bg-gray);
+    color: var(--color--text-1);
+}
+
+.header-main {
+    height: 60px;
+    background-color: var(--color--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-main-logo {
+    width: 135px;
+}
+
+body {
+    background-color: var(--color--bg-gray);
+}
+
+.table-users {
+    padding: 1rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--color--primary);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.table-users th {
+    border-bottom: 1px solid var(--color--text-1);
+}
+
+.table-users td,
+.table-users th {
+    padding: 0.35rem 1rem;
+    font-size: 0.85rem;
+}
+
+.table-users tr:nth-child(even) {
+    background-color: #e1dada;
+  }
+
+.pag-links {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.pag-links > a:hover {
+    transform: scale(1.2);
+}
+
+
+.pag-links > a,
+.pag-links > span {
+    text-decoration: none;
+    color: var(--color--text-1);
+    font-weight: 600;
+}
+
+img {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
